@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabfren – Cables a medida y reparaciones en Montevideo</title>
+  <meta name="description" content="Cabfren es un taller especializado en cables de freno a medida Montevideo, cables de embrague a medida Montevideo, cables de acelerador, cables de cambio, reparación de alzacristales Montevideo y cables para autos antiguos. Más de 40 años de experiencia en Montevideo.">
+  <meta name="google-site-verification" content="E7y4WzRb2QKhl27rkAmDXMSFRftYHbVAqYzjEpdX4i0" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile-fix.css">
+</head>
+<body>
+
+  <!-- Banner Carnaval (se oculta automáticamente después del 20/02) -->
+  <div id="banner-carnaval" class="aviso-carnaval">
+    🎭 <strong>CERRADO POR CARNAVAL</strong> del 16 al 20 de febrero. Volvemos el 21/02. 
+    <br>Consultas por WhatsApp: <a href="https://wa.me/59899681278" style="color: white; text-decoration: underline;">099 681 278</a>
+  </div>
+
+  <script>
+  // Auto-ocultar el banner después del 20 de febrero de 2026
+  const fechaFin = new Date('2026-02-21T00:00:00');
+  const ahora = new Date();
+  if (ahora >= fechaFin) {
+    document.getElementById('banner-carnaval').style.display = 'none';
+  }
+  </script>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="header-container">
+      <div class="logo">CABFREN</div>
+      
+      <!-- Botón hamburguesa para móvil -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#por-que-elegirnos">Por qué elegirnos</a></li>
+          <li><a href="#quienes-somos">Quiénes somos</a></li>
+          <li><a href="#nuestro-taller">Nuestro taller</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero (Inicio) -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Cabfren – Cables a medida y reparaciones</h1>
+        <p class="eslogan">Cables a medida en el día, como los talleres de antes.</p>
+        <div class="hero-buttons">
+          <a href="#servicios" class="btn btn-primary">Ver servicios</a>
+          <a href="https://wa.me/59899681278?text=Hola%20me%20gustaría%20pedir%20un%20presupuesto%20para%20un%20cable%20a%20medida" target="_blank" class="btn btn-secondary">Escribir por WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <img src="images/duenio-cables.jpg" alt="Dueño de Cabfren trabajando en cables a medida" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="servicios">
+    <div class="container">
+      <h2>Servicios</h2>
+      <p class="section-intro">Fabricación y reparación de cables de movimiento y freno para autos, camionetas, utilitarios y maquinaria.</p>
+      <div class="servicios-grid">
+        
+        <div class="servicio-card" data-servicio="Cables de freno a medida">
+          <h3>Cables de freno a medida</h3>
+          <p>Fabricamos y reparamos cables de freno para todo tipo de vehículos, incluyendo modelos antiguos y difíciles de conseguir.</p>
+          <button class="btn btn-whatsapp" data-servicio="Cables de freno a medida">Consultar por WhatsApp</button>
+        </div>
+
+        <div class="servicio-card" data-servicio="Cables de embrague a medida">
+          <h3>Cables de embrague a medida</h3>
+          <p>Cables de embrague fabricados en el día, con precisión y calidad artesanal para cualquier marca y modelo.</p>
+          <button class="btn btn-whatsapp" data-servicio="Cables de embrague a medida">Consultar por WhatsApp</button>
+        </div>
+
+        <div class="servicio-card" data-servicio="Cables de acelerador">
+          <h3>Cables de acelerador</h3>
+          <p>Cables de acelerador a medida para autos, camionetas y maquinaria. Trabajo rápido y confiable.</p>
+          <button class="btn btn-whatsapp" data-servicio="Cables de acelerador">Consultar por WhatsApp</button>
+        </div>
+
+        <div class="servicio-card" data-servicio="Cables de cambio">
+          <h3>Cables de cambio</h3>
+          <p>Fabricación y reparación de cables de cambio para todo tipo de vehículos, incluyendo marcas viejas.</p>
+          <button class="btn btn-whatsapp" data-servicio="Cables de cambio">Consultar por WhatsApp</button>
+        </div>
+
+        <div class="servicio-card" data-servicio="Cables de velocímetro">
+          <h3>Cables de velocímetro</h3>
+          <p>Reparación y fabricación de cables de velocímetro para autos antiguos y modernos.</p>
+          <button class="btn btn-whatsapp" data-servicio="Cables de velocímetro">Consultar por WhatsApp</button>
+        </div>
+
+        <div class="servicio-card" data-servicio="Selectores de cambio">
+          <h3>Selectores de cambio</h3>
+          <p>Reparación de selectores de cambio para todo tipo de vehículos.</p>
+          <button class="btn btn-whatsapp" data-servicio="Selectores de cambio">Consultar por WhatsApp</button>
+        </div>
+
+        <div class="servicio-card" data-servicio="Reparación de alzacristales">
+          <h3>Reparación de máquinas alzacristales</h3>
+          <p>Reparación especializada de alzacristales eléctricos y manuales para autos y camionetas.</p>
+          <button class="btn btn-whatsapp" data-servicio="Reparación de alzacristales">Consultar por WhatsApp</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Por qué elegir Cabfren -->
+  <section id="por-que-elegirnos" class="por-que-elegirnos">
+    <div class="container">
+      <h2>Por qué elegir Cabfren</h2>
+      <ul class="checklist">
+        <li>Más de 40 años de experiencia atendiendo personalmente el taller.</li>
+        <li>Trabajo artesanal, prolijo y confiable, como los talleres de antes.</li>
+        <li>Cables a medida fabricados en el día.</li>
+        <li>Especialista en marcas viejas y autos antiguos que casi nadie toca.</li>
+        <li>Atención a particulares, talleres mecánicos y casas de repuestos.</li>
+        <li>Clientes fijos que derivan trabajo por la calidad y confianza.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Quiénes somos -->
+  <section id="quienes-somos" class="quienes-somos">
+    <div class="container">
+      <h2>Quiénes somos</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Cabfren es un taller especializado en la fabricación y reparación de cables de freno, cables de embrague, cables de acelerador, cables de cambio, cables de velocímetro y selectores de cambio, además de reparación de máquinas alzacristales.</p>
+          <p>Trabajamos para autos, camionetas, utilitarios y maquinaria. Hacemos cables a medida en el día y atendemos marcas y modelos antiguos que casi nadie toca.</p>
+          <p>Con más de 40 años de experiencia en el rubro, ofrecemos atención personalizada, trabajo prolijo y de confianza en Montevideo.</p>
+        </div>
+        <div class="about-image">
+          <img src="images/duenio-alzacristal.jpg" alt="Dueño de Cabfren reparando alzacristal" class="about-photo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nuestro taller -->
+  <section id="nuestro-taller" class="nuestro-taller">
+    <div class="container">
+      <h2>Nuestro taller</h2>
+      <div class="galeria-grid">
+        <img src="images/fachada.jpg" alt="Fachada del taller Cabfren en La Paz y Yaguaron" class="workshop-photo">
+        <img src="images/mostrador.jpg" alt="Mostrador del taller Cabfren" class="workshop-photo">
+        <img src="images/torno.jpg" alt="Torno para fabricación de cables en Cabfren" class="workshop-photo">
+        <img src="images/duenio-selfie.jpg" alt="Dueño del taller Cabfren" class="workshop-photo">
+        <img src="images/duenio-cables.jpg" alt="Dueño de Cabfren trabajando en cables" class="workshop-photo">
+        <img src="images/duenio-alzacristal.jpg" alt="Dueño de Cabfren reparando alzacristal" class="workshop-photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto y ubicación -->
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <h2>Contacto y ubicación</h2>
+      <div class="contacto-content">
+        <div class="contacto-info">
+          <p><strong>Dirección:</strong> La Paz 1284 esquina Yaguaron, Montevideo, Uruguay</p>
+          <p><strong>Teléfono:</strong> +598 99 681 278</p>
+          <p><strong>WhatsApp:</strong> +598 99 681 278</p>
+          
+          <div class="horarios-box">
+            <h3>Horarios de atención</h3>
+            <p>Lunes a viernes: 9:00 a 12:30 y de 14:00 a 18:00</p>
+          </div>
+          
+          <div class="contacto-buttons">
+            <a href="tel:+59899681278" class="btn btn-primary">Llamar ahora</a>
+            <a href="https://wa.me/59899681278?text=Hola%20me%20gustaría%20pedir%20un%20presupuesto%20para%20un%20cable%20a%20medida" target="_blank" class="btn btn-secondary">WhatsApp</a>
+            <a href="https://maps.google.com/?q=-34.897752,-56.186769" target="_blank" class="btn btn-tertiary">Cómo llegar</a>
+          </div>
+
+          <div class="mapa-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.1543855679384!2d-56.18676952347205!3d-34.89775217282589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81b729c3d2e5%3A0x7f8c8d8e8f8e8f8e!2sLa%20Paz%201284%2C%2011800%20Montevideo%2C%20Uruguay!5e0!3m2!1ses!2suy!4v1707523423123!5m2!1ses!2suy" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="contacto-imagen">
+          <img src="images/fachada.jpg" alt="Fachada del taller Cabfren" class="contacto-photo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Cabfren – Cables de movimiento y freno. Montevideo, Uruguay.</p>
+      <p>La Paz 1284 esquina Yaguaron, Montevideo</p>
+      <p>&copy; <span id="year"></span> Cabfren. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
